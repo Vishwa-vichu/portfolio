@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio</title>
+  <meta content="Vishwa M,Cloud Computing, Networking, System Administrator, Architect, Developer, Portfolio, Vishwa M, Bangalore, India" name="keywords">
+  <meta content="Vishwa M's portfolio showcasing skills and experience in Cloud Computing, Networking, and System Administration. Explore my projects, resume, and services offered." name="description">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+   
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<style>
+        .icon-circle {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background-color: #f8f9fa;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 15px;
+          transition: background-color 0.3s ease;
+        }
+
+        .icon-circle i {
+          font-size: 24px;
+          color: inherit;
+        }
+
+        .card.skills {
+          transition: transform 0.3s ease, background-color 0.3s ease;
+          height: 100%;
+          width: 100%;
+        }
+
+        .card.skills:hover {
+          transform: translateY(-10px);
+          background-color: #007bff;
+        }
+
+        .card.skills:hover .icon-circle {
+          background-color: #fff;
+        }
+
+        .card.skills:hover .heading,
+        .card.skills:hover p {
+          color: #fff;
+        }
+
+        .skills-content .card-body {
+          height: 200px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      </style>
+
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Vishwa M</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/vishwa-muthuvel/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/Vishwa-vichu" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://www.hackerrank.com/profile/vishwavichu11201" class="hackerrank"><i class="bi bi-code-slash"></i></a>
+      <!-- <a href="https://www.skillrack.com/vishwam" class="skillrack"><i class="bi bi-laptop"></i></a> -->
+      <a href="https://wa.me/919345474047" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
+      <a href="tel:+919345474047" class="phone"><i class="bi bi-telephone"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#skills"><i class="bi bi-images navicon"></i> Skills</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      
+      <img src="assets/img/cloud-computing.webp" alt="Co-working illustration" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Vishwa M</h2>
+        <p>I'm Cloud <span class="typed" data-typed-items="Network Engineer, System Administrator, Architect, Developer">Network Engineer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Focused B.E graduate in Electronics and Communications with strong communication skills and the ability to adapt to change. Seeking to apply knowledge and skills to a dynamic role in Networking and Cloud Computing. I am looking for a job to start my career journey and enhance my skills and knowledge while contributing to the growth of the organization. I believe this is a great opportunity for me to learn from experts. As an active learner, I improve my skills quickly, which helps in training me rapidly. I am good at time management, which helps the organization complete tasks within deadlines.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Cloud Administrator.</h2>
+            <p class="fst-italic py-3">
+                As a fresher and enthusiastic Cloud Administrator, I have a keen interest in managing and maintaining cloud infrastructure. My growing expertise includes deploying, configuring, and monitoring cloud services, ensuring high availability and security. I am eager to learn and proficient in automating cloud operations and optimizing performance to meet business requirements.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>11 May 2003</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><a href="tel:+919345474047">+91 93454 74047</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Bangalore , India</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.E</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="mailto:vishwavichu112003@gmail.com">vishwavichu112003@gmail.com</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+
+    </section><!-- /About Section -->
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <p>Here are some of the skills I have acquired over the years.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 skills-content">
+
+          <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="card skills">
+              <div class="card-body text-center">
+                <div class="icon-circle">
+                  <i class="fas fa-network-wired" style="color: #007bff;"></i>
+                </div>
+                <h3 class="heading">Networking</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="card skills">
+              <div class="card-body text-center">
+                <div class="icon-circle">
+                  <i class="fas fa-tools" style="color: #ff6347;"></i>
+                </div>
+                <h3 class="heading">Hardware</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="card skills">
+              <div class="card-body text-center">
+                <div class="icon-circle">
+                  <i class="fab fa-redhat" style="color: #e00000;"></i>
+                </div>
+                <h3 class="heading">Red Hat Linux</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="card skills">
+              <div class="card-body text-center">
+                <div class="icon-circle">
+                  <i class="fab fa-python" style="color: #306998;"></i>
+                </div>
+                <h3 class="heading">Python</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="card skills">
+              <div class="card-body text-center">
+                <div class="icon-circle">
+                  <i class="fab fa-aws" style="color: #ff9900;"></i>
+                </div>
+                <h3 class="heading">AWS</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+            <div class="card skills">
+              <div class="card-body text-center">
+                <div class="icon-circle">
+                  <i class="fab fa-html5" style="color: #e34c26;"></i>
+                </div>
+                <h3 class="heading">HTML</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      
+    </section><!-- /Skills Section -->
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      <h3 class="resume-title">Objective</h3>
+      <div class="resume-item pb-0">
+        <p><em>As a recent graduate with a degree in Electronics and Communications, I am eager to start my career in the field of Networking and Cloud Computing. I am looking for an entry-level position where I can apply my skills, learn from experienced professionals, and contribute to the growth of the organization.</em></p>
+      </div>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">About</h3>
+
+            <div class="resume-item pb-0">
+              <h4>Vishwa M</h4>
+                <p><em>Enthusiastic and detail-oriented Cloud Computing fresher with a strong foundation in cloud infrastructure, eager to apply knowledge in real-world scenarios. Proficient in deploying, configuring, and managing cloud services, with a focus on optimizing performance and ensuring security. Seeking an entry-level position to contribute to organizational growth while gaining hands-on experience.</em></p>
+              <ul>
+                <li>Bangalore , Karnataka , India</li>
+                <li>+91 93454 74047</li>
+                <li>vishwavichu112003@.com</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Engineering &amp; Electronics and Communications Engineering</h4>
+              <h5>2020 - 2024</h5>
+              <p><em>K Ramakrishnan college of Technology, Trichy, TN</em></p>
+                <p>The field of Electronics and Communications Engineering (ECE) encompasses a wide range of technologies that are essential to modern life. ECE professionals design and develop electronic devices, communication systems, and networks that enable everything from smartphones to satellite communications. This field combines principles of electrical engineering and computer science to create innovative solutions that improve connectivity and enhance the functionality of electronic systems.</p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Course &amp; Cloud computing and DevOps</h4>
+              <h5>2024 - Present</h5>
+              <p><em>Be practicals tech solution, Bangalore</em></p>
+                <p>This course covers the fundamentals of Cloud Computing and DevOps, including cloud service models, deployment strategies, and continuous integration/continuous deployment (CI/CD) pipelines. It provides hands-on experience with popular cloud platforms and DevOps tools, preparing students to manage and automate cloud infrastructure efficiently.</p>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Certification</h3>
+            <div class="resume-item">
+              <h4>Cloud computing +DevOps</h4>
+              <h5>2024 - Present</h5>
+              <p><em>Be practical tech solution, Bangalore, Karnataka </em></p>
+              <ul>
+                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project.</li>
+                <li>Gained hands-on experience with cloud platforms such as AWS, Azure, and Google Cloud</li>
+                <li>Learned to implement CI/CD pipelines using tools like Jenkins, GitLab CI, and GitHub Actions</li>
+                <li>Developed skills in containerization and orchestration with Docker and Kubernetes</li>
+                <li>Acquired knowledge in infrastructure as code (IaC) using Terraform and Ansible</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>AWS cloud Practitioner Essentials</h4>
+              <h5>17/10/2024</h5>
+              <p><em>Skill builer</em></p>
+              <ul>
+                <li>Gained foundational knowledge of AWS cloud concepts, services, and architecture</li>
+                <li>Learned to identify AWS services for common use cases</li>
+                <li>Developed skills in AWS security and compliance measures</li>
+                <li>Acquired understanding of AWS pricing models and billing practices</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /Resume Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section"> 
+      <div class="container section-title" data-aos="fade-up">
+      
+      <h2>Services</h2>
+      <p>Here are some of the services I offer to help you achieve your goals.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+          <div class="card services">
+        <div class="card-body text-center">
+          <div class="icon-circle">
+        <i class="fas fa-cloud"></i>
+          </div>
+          <h3 class="heading">Cloud Databases</h3>
+          <p class="mb-0">Reliable and scalable cloud database solutions for your business needs.</p>
+        </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+          <div class="card services">
+        <div class="card-body text-center">
+          <div class="icon-circle">
+        <i class="fas fa-server"></i>
+          </div>
+          <h3 class="heading">Website Hosting</h3>
+          <p class="mb-0">Secure and fast website hosting services to keep your site running smoothly.</p>
+        </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+          <div class="card services">
+        <div class="card-body text-center">
+          <div class="icon-circle">
+        <i class="fas fa-headset"></i>
+          </div>
+          <h3 class="heading">File Storage</h3>
+          <p class="mb-0">Efficient and secure file storage solutions for your important data.</p>
+        </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+          <div class="card services">
+        <div class="card-body text-center">
+          <div class="icon-circle">
+        <i class="fas fa-code"></i>
+          </div>
+          <h3 class="heading">Web Development</h3>
+          <p class="mb-0">Professional web development services to build your online presence.</p>
+        </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+          <div class="card services">
+        <div class="card-body text-center">
+          <div class="icon-circle">
+        <i class="fas fa-cloud-upload-alt"></i>
+          </div>
+          <h3 class="heading">File Backups</h3>
+          <p class="mb-0">Secure and reliable file backup solutions to protect your data.</p>
+        </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-self-stretch ftco-animate">
+          <div class="card services">
+        <div class="card-body text-center">
+          <div class="icon-circle">
+        <i class="fas fa-desktop"></i>
+          </div>
+          <h3 class="heading">Remote Desktop</h3>
+          <p class="mb-0">Access your desktop from anywhere with our remote desktop services.</p>
+        </div>
+          </div>
+        </div>
+      </div>
+
+      <style>
+      .icon-circle {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #f8f9fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 15px;
+        transition: background-color 0.3s ease;
+      }
+
+      .icon-circle i {
+        font-size: 24px;
+        color: #333;
+      }
+
+      .card.services {
+        transition: transform 0.3s ease, background-color 0.3s ease;
+      }
+
+      .card.services:hover {
+        transform: translateY(-10px);
+        background-color: #007bff;
+      }
+
+      .card.services:hover .icon-circle {
+        background-color: #fff;
+      }
+
+      .card.services:hover .icon-circle i {
+        color: #007bff;
+      }
+
+      .card.services:hover .heading,
+      .card.services:hover p {
+        color: #fff;
+      }
+      </style>
+    </div>
+
+
+    </section>
+    <!-- /Services Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>If you have any questions or would like to get in touch, please feel free to contact me using the form below.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Bangalore , Karnataka , India</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p>+91 93454 74047</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <p>vishwavichu112003@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.279236763151!2d77.55596331482257!3d12.99559899085764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670b1b1b1b1%3A0x1b1b1b1b1b1b1b1b!2s30%2C%2060%20Feet%20Rd%2C%20JC%20Nagar%2C%20Kurubarahalli%2C%20Maruthi%20Nagar%2C%20Bengaluru%2C%20Karnataka%20560086!5e0!3m2!1sen!2sin!4v1676961268712!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> 2024<strong class="px-1 sitename">Vishwa M</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a> -->
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
